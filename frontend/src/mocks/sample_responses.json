@@ -1,0 +1,174 @@
+{
+  "_note": "ILLUSTRATIVE PLACEHOLDERS for UI mocks. Not real destinations or scores.",
+  "recommendation_response": {
+    "request_id": "example-request-id",
+    "data_mode": "curated_rule_estimate",
+    "start_crowd": {
+      "score": 78,
+      "level": "Busy",
+      "mode": "curated_rule_estimate",
+      "components": {
+        "baseline_popularity": 90,
+        "date_demand": 80,
+        "event_pressure": 50,
+        "weather_visit_tendency": 50
+      },
+      "notes": [
+        "Event data was unverified; neutral component used",
+        "weather unavailable"
+      ],
+      "reviewed_at": "2026-10-12"
+    },
+    "recommendations": [
+      {
+        "destination_id": 12,
+        "name": "Example Destination",
+        "rank_score": 76.3,
+        "crowd": {
+          "score": 41,
+          "level": "Moderate",
+          "mode": "curated_rule_estimate",
+          "components": {
+            "baseline_popularity": 45,
+            "date_demand": 60,
+            "event_pressure": 50,
+            "weather_visit_tendency": 50
+          },
+          "notes": [
+            "Event data was unverified; neutral component used",
+            "weather unavailable"
+          ],
+          "reviewed_at": "2026-10-12"
+        },
+        "score_components": {
+          "interest_fit": 90.0,
+          "quietness_fit": 59.0,
+          "travel_fit": 80.0,
+          "homestay_fit": 50.0
+        },
+        "shared_tags": [
+          "nature",
+          "village"
+        ],
+        "reasons": [
+          "Matches nature and village tags",
+          "Lower estimate than starting place"
+        ],
+        "reviewed_at": "2026-10-12",
+        "readiness": {
+          "status": "needs_confirmation",
+          "reasons": [
+            "EXAMPLE: last-mile access not reviewed for these dates"
+          ],
+          "reviewed_at": "2026-10-12",
+          "evidence": [
+            {
+              "id": 1,
+              "report_type": "access",
+              "summary": "EXAMPLE ONLY: placeholder access note.",
+              "source_label": "example_source",
+              "source_url": null,
+              "observed_at": "2026-10-12",
+              "reviewed_at": "2026-10-12",
+              "expires_at": "2026-12-31",
+              "verification_status": "reviewed",
+              "is_stale": false
+            }
+          ]
+        }
+      }
+    ],
+    "warnings": [
+      "Crowd scores are curated estimates, not live measurements."
+    ]
+  },
+  "itinerary_response": {
+    "request_id": "example-request-id",
+    "generation_mode": "template",
+    "data_mode": "curated_rule_estimate",
+    "days": [
+      {
+        "date": "2026-11-07",
+        "items": [
+          {
+            "time_block": "morning",
+            "destination_id": 12,
+            "destination_name": "Example Destination",
+            "activity_text": "Explore the curated nature spot",
+            "reason": "Matches selected interests",
+            "crowd": {
+              "score": 41,
+              "level": "Moderate",
+              "mode": "curated_rule_estimate",
+              "components": {
+                "baseline_popularity": 45,
+                "date_demand": 60,
+                "event_pressure": 50,
+                "weather_visit_tendency": 50
+              },
+              "notes": [
+                "Event data was unverified; neutral component used",
+                "weather unavailable"
+              ],
+              "reviewed_at": "2026-10-12"
+            }
+          }
+        ]
+      }
+    ],
+    "homestay_ids": [
+      31
+    ],
+    "destinations": [
+      {
+        "id": 12,
+        "name": "Example Destination",
+        "district": "Example District",
+        "region": "Uttarakhand",
+        "latitude": null,
+        "longitude": null,
+        "description": "EXAMPLE ONLY",
+        "tags": [
+          "nature",
+          "village"
+        ],
+        "best_months": [
+          3,
+          4,
+          10,
+          11
+        ],
+        "baseline_popularity": 45,
+        "access_notes": "",
+        "last_mile_notes": "",
+        "connectivity_notes": "",
+        "readiness_source_label": null,
+        "readiness_reviewed_at": null,
+        "source_label": "example_source",
+        "reviewed_at": "2026-10-12",
+        "alternative_ids": []
+      }
+    ],
+    "homestays": [
+      {
+        "id": 31,
+        "destination_id": 12,
+        "name": "Example Homestay",
+        "village": "Example Village",
+        "price_min": null,
+        "price_max": null,
+        "currency": "INR",
+        "public_contact": null,
+        "booking_url": null,
+        "amenities": [
+          "meals"
+        ],
+        "source_label": "example_source",
+        "reviewed_at": "2026-10-12"
+      }
+    ],
+    "warnings": [
+      "Travel time is not routed or verified"
+    ]
+  }
+}
